@@ -30,8 +30,26 @@
     display: flex;
     justify-content: space-around;
 }
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-column-end{
+    justify-content: flex-end;
+}
+.bg-grey{
+    background-color: rgb(37, 37, 44);
+}
 
-
+.bg-black{
+    background-color: black;
+}
+.text-white{
+    color: white;
+}
+.text-grey{
+   color: rgb(89, 95, 100); 
+}
 
 
 /* TEMPORARY DEBUG */
@@ -51,14 +69,15 @@ li{
 }
 .card-container{
     display: flex;
-    gap: 10px;
 }
 
 .card{
     text-align: center;
-    width: calc(100% / 6 - (15px / 6));
+    width: calc(100% / 6);
 }
 img{
-    width: 100%;
+    width: 90%;
 }
-
+.circle-card{
+    border-radius: 100px;
+}
