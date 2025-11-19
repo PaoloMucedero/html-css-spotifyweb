@@ -5,7 +5,60 @@
     box-sizing: border-box;
 }
 
+/* UTILITIES */
+.border-red{
+    border: 2px solid red;
+}
+.border-blu{
+    border: 2px solid blue;
+}
+.border-black{
+    border: 2px solid black;
+}
+.border-violet{
+    border: 2px solid violet;
+}
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.flex-spc-and{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
 
 /* TEMPORARY DEBUG */
 
+.main-container{
+    display: flex;
+}
+.left-navbar{
+    width: 200px;
+}
+.main-section{
+    width: calc(100% - 200px);
+}
+
+li{
+    list-style-type: none;
+}
+.card-container{
+    display: flex;
+    gap: 10px;
+}
+
+.card{
+    text-align: center;
+    width: calc(100% / 6 - (15px / 6));
+}
+img{
+    width: 100%;
+}
 
