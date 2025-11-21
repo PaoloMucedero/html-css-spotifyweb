@@ -23,15 +23,17 @@
             <div>
                 <div class="logo-navbar">
                     <img src="./img/logo.svg" alt="Logo-Sporify">
+                    <img class="display-none logo-small" src="./img/logo-small.svg"
+                        alt="logo-small"><!--LOGO DA FAR APPARIRE IN VERSIONE SMARTPHONE-->
                 </div>
                 <ul>
                     <li class="text-white"><i class="fa-solid fa-house text-white"></i>Home</li>
                     <li class="text-grey"><i class="fa-solid fa-magnifying-glass text-grey"></i>Cerca</li>
                     <li class="text-grey"><i class="fa-solid fa-lines-leaning text-grey"></i>La tua libreria</li>
                 </ul>
-                <h3>PLAYLIST</h3>
+                <h3 class="text-white">PLAYLIST</h3>
                 <div class="text-grey">
-                crea playlist (plus button)
+                    crea playlist (plus button)
                 </div>
                 <ul class="text-grey">
                     <li>Nuova playlist</li>
@@ -44,58 +46,61 @@
                 </ul>
             </div>
             <div>
-                <a href="#">Installa app</a>
+                <div class="flex-display flex-start">
+                    <img class="dwl-svg" src="./img/download.svg">
+                    <a style="padding-left: 10px;" class="text-grey" href="#">Installa app</a></img>
+                </div>
                 <hr>
-                <div>
-                    <span class="text-grey"><i class="fa-solid fa-circle-user"></i>John Doe</span>
+                <div>   
+                    <a href="#"><img class="dwl-svg" src="./img/profile.svg">John Doe</img></a>
                 </div>
             </div>
         </section>
         <section class="main-section border-violet">
             <div class="headbar flex-end">
                 <div class="upgrade">
-                    <button>EFFETTUA L'UPGRADE</button>
+                    <a class="upgrade-btn" href="#">EFFETTUA L'UPGRADE</a>
                 </div>
             </div>
             <div class="scroll-section bg-grey">
-                <ul class="scoll-list flex-spc-and">
-                    <li class="text-grey">IN EVIDENZA</li>
-                    <li class="text-grey">PODCAST</li>
-                    <li class="text-grey">CLASSIFICHE</li>
-                    <li class="text-grey">GENERI E MOOD</li>
-                    <li class="text-grey">NUOVE USCITE</li>
-                    <li class="text-grey">SCOPRI</li>
+                <ul class="scroll-list flex-center">
+                    <li class="text-grey"><a href="">IN EVIDENZA</a></li>
+                    <li class="text-grey"><a href="">PODCAST</a></li>
+                    <li class="text-grey"><a href="">CLASSIFICHE</a></li>
+                    <li class="text-grey"><a href="">GENERI E MOOD</a></li>
+                    <li class="text-grey"><a href="">NUOVE USCITE</a></li>
+                    <li class="text-grey"><a href="">SCOPRI</a></li>
                 </ul>
                 <h2 class="text-white">Recently played</h2>
                 <div class="card-container flex-spc-and">
                     <div class="card">
-                        <img src="./img/metal_lifting.jpg" alt="album-cover">
+                        <img class="album-cover" src="./img/metal_lifting.jpg" alt="album-cover">
                         <h3 class="text-white">Heavy Metal</h3>
                         <span class="text-grey">Subtitle</span>
                     </div>
                     <div class="card">
-                        <img src="./img/stranger.jpeg" alt="album-cover">
+                        <img class="album-cover" src="./img/stranger.jpeg" alt="album-cover">
                         <h3 class="text-white">Stranger Things, Vol.1 (a Netflix Original Series soundtrack)</h3>
                         <span class="text-grey">Kyle Dixon & Michael Stein</span>
                     </div>
                     <div class="card">
-                        <img src="./img/aquietplace.jpeg" alt="album-cover">
-                        <h3 class="text-white">Nome Album</h3>
+                        <img class="album-cover" src="./img/aquietplace.jpeg" alt="album-cover">
+                        <h3 class="text-white">A quiet Place</h3>
                         <span class="text-grey">Subtitle</span>
                     </div>
                     <div class="card">
-                        <img src="./img/split.jpeg" alt="album-cover">
-                        <h3 class="text-white">Nome Album</h3>
+                        <img class="album-cover" src="./img/split.jpeg" alt="album-cover">
+                        <h3 class="text-white">Split</h3>
                         <span class="text-grey">Subtitle</span>
                     </div>
                     <div class="card">
-                        <img src="./img/cure.jpeg" alt="album-cover">
-                        <h3 class="text-white">Nome Album</h3>
+                        <img class="album-cover" src="./img/cure.jpeg" alt="album-cover">
+                        <h3 class="text-white">A cure for Wellness</h3>
                         <span class="text-grey">Subtitle</span>
                     </div>
                     <div class="card">
-                        <img src="./img/sinister.jpeg" alt="album-cover">
-                        <h3 class="text-white">Nome Album</h3>
+                        <img class="album-cover" src="./img/sinister.jpeg" alt="album-cover">
+                        <h3 class="text-white">Sinister</h3>
                         <span class="text-grey">Subtitle</span>
                     </div>
                 </div>
@@ -105,12 +110,12 @@
                 </div>
                 <div class="card-container">
                     <div class="card">
-                        <img src="./img/radar.jpeg" alt="album-cover">
+                        <img class="album-cover" src="./img/radar.jpeg" alt="album-cover">
                         <h3 class="text-white">Release Radar</h3>
                     </div>
                     <div class="card">
-                        <img src="./img/mixdaily.jpeg" alt="album-cover">
-                        <h3 class="text-white">Nome Album</h3>
+                        <img class="album-cover" src="./img/mixdaily.jpeg" alt="album-cover">
+                        <h3 class="text-white">Daily Mix 1</h3>
                     </div>
                 </div>
                 <div>
@@ -119,12 +124,12 @@
                 </div>
                 <div class="card-container">
                     <div class="card">
-                        <img class="circle-card" src="./img/youg.jpeg" alt="album-cover">
-                        <h3 class="text-white">Nome Album</h3>
+                        <img class="circle-card album-cover" src="./img/youg.jpeg" alt="album-cover">
+                        <h3 class="text-white">Lana del Rey</h3>
                     </div>
                     <div class="card">
-                        <img class="circle-card" src="./img/einaudi.jpeg" alt="album-cover">
-                        <h3 class="text-white">Nome Album</h3>
+                        <img class="circle-card album-cover" src="./img/einaudi.jpeg" alt="album-cover">
+                        <h3 class="text-white">Einaudi</h3>
                     </div>
                 </div>
 
